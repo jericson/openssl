@@ -8,7 +8,7 @@ ossl-guide-libssl-introduction, ssl
 =head1 INTRODUCTION
 
 The OpenSSL C<libssl> library provides implementations of several secure network
-communications protocols. Specifically it provides SSL/TLS (SSLv3, TLSv1,
+communications protocols. Specifically it provides SSL/TLS (TLSv1,
 TLSv1.1, TLSv1.2 and TLSv1.3), DTLS (DTLSv1 and DTLSv1.2) and QUIC (client side
 only). The library depends on C<libcrypto> for its underlying cryptographic
 operations (see L<ossl-guide-libcrypto-introduction(7)>).

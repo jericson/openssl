@@ -58,7 +58,7 @@ untouched while maintaining reproducibility.
 
 Since the sessions must be distinguished, session ids must be unique.
 Without the callback a random number is used, so that the probability
-of generating the same session id is extremely small (2^256 for SSLv3/TLSv1).
+of generating the same session id is extremely small (2^256 for TLSv1).
 In order to assure the uniqueness of the generated session id, the callback must call
 SSL_has_matching_session_id() and generate another id if a conflict occurs.
 If an id conflict is not resolved, the handshake will fail.

@@ -61,11 +61,12 @@ protocol. The IETF have formally deprecated TLSv1.1 and TLSv1.0, so anything
 below TLSv1.2 should be avoided since the older protocol versions are
 susceptible to security problems.
 
-OpenSSL does not support SSLv2 (it was removed in OpenSSL 1.1.0). Support for
-SSLv3 is available as a compile time option - but it is not built by default.
-Support for TLSv1.0, TLSv1.1, TLSv1.2 and TLSv1.3 are all available by default
-in a standard build of OpenSSL. However special run-time configuration is
-required in order to make TLSv1.0 and TLSv1.1 work successfully.
+OpenSSL does not support SSLv2 (it was removed in OpenSSL
+1.1.0). Support for SSLv3 was available as a compile time option until
+it was removed in OpenSSL 4.0.  Support for TLSv1.0, TLSv1.1, TLSv1.2
+and TLSv1.3 are all available by default in a standard build of
+OpenSSL. However special run-time configuration is required in order
+to make TLSv1.0 and TLSv1.1 work successfully.
 
 OpenSSL will always try to negotiate the highest protocol version that it has
 been configured to support. In most cases this will mean either TLSv1.3 or

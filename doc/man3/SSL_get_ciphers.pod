@@ -52,7 +52,7 @@ available, or B<ssl> is not operating in server mode, NULL is returned.
 
 SSL_bytes_to_cipher_list() treats the supplied B<len> octets in B<bytes>
 as a wire-protocol cipher suite specification in the two-octet
-SSLv3/TLS wire format, and parses the cipher suites supported by the library
+TLS wire format, and parses the cipher suites supported by the library
 into the returned stacks of SSL_CIPHER objects sk and Signalling Cipher-Suite
 Values scsvs.
 The B<isv2format> is no longer supported and should always be set to 0.
